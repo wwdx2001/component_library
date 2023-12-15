@@ -1,6 +1,11 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+// 1. 【必加】 启用 android-maven 插件
+apply plugin: 'com.github.dcendents.android-maven'
+// 2. 【必加】 关联Github地址, 格式为 com.github.(用户名)
+group = 'com.github.wwdx2001'
+
 android {
     compileSdkVersion 33
     buildToolsVersion "34.0.0"
