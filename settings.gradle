@@ -1,0 +1,2 @@
+include ':app', '::customize_library'
+rootProject.name='component_library'
