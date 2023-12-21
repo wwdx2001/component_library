@@ -252,12 +252,12 @@ class FrameGradientDrawable(
 
     }
 
-    val layerId = canvas.saveLayer(mRectF, null)
     canvas.drawPath(mOutPath, mFramePaint)
-    mFramePaint.xfermode = PorterDuffXfermode(PorterDuff.Mode.DST_OUT)
-    canvas.drawPath(mInnerPath, mFramePaint)
-    mFramePaint.xfermode = PorterDuffXfermode(PorterDuff.Mode.CLEAR)
+//    mFramePaint.xfermode = PorterDuffXfermode(PorterDuff.Mode.DST_OUT)
+//    canvas.drawPath(mInnerPath, mFramePaint)
+//    mFramePaint.xfermode = PorterDuffXfermode(PorterDuff.Mode.CLEAR)
     canvas.drawPath(mBackgroundPath, mBackgroundPaint)
+    val layerId = canvas.save()
     canvas.restoreToCount(layerId)
 
   }
