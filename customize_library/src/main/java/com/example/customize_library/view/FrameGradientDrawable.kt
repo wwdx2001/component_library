@@ -144,7 +144,7 @@ class FrameGradientDrawable(
             mTopFrameWidth,
             width - mRightFrameWidth,
             height - mBottomFrameWidth,
-            mFrameRadii,
+            mBackgroundRadii,
             Path.Direction.CW
           )
         } else {
@@ -171,8 +171,8 @@ class FrameGradientDrawable(
             mTopFrameWidth,
             width - mRightFrameWidth,
             height - mBottomFrameWidth,
-            mFrameRadius,
-            mFrameRadius,
+            mBackgroundRadius,
+            mBackgroundRadius,
             Path.Direction.CW
           )
         }
@@ -197,7 +197,7 @@ class FrameGradientDrawable(
               mTopFrameWidth,
               width - mRightFrameWidth,
               height - mBottomFrameWidth
-            ), mFrameRadii, Path.Direction.CW
+            ), mBackgroundRadii, Path.Direction.CW
           )
         } else {
           mOutPath.addRoundRect(
@@ -220,7 +220,7 @@ class FrameGradientDrawable(
               mTopFrameWidth,
               width - mRightFrameWidth,
               height - mBottomFrameWidth
-            ), mFrameRadius, mFrameRadius, Path.Direction.CW
+            ), mBackgroundRadius, mBackgroundRadius, Path.Direction.CW
           )
         }
       }
